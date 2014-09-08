@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ButtGridViewTest/ButtGridViewTest.xcodeproj">
+      location = "group:ButtGridViewTest/ButtonGridViewTest.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:LabelWithTapableTextChunksTest/LabelWithTapableTextChunksTest.xcodeproj">

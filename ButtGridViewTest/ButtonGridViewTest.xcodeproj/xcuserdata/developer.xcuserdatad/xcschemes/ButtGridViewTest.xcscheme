@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BF8988619BD963500E00CC3"
                BuildableName = "ButtGridViewTest.app"
-               BlueprintName = "ButtGridViewTest"
-               ReferencedContainer = "container:ButtGridViewTest.xcodeproj">
+               BlueprintName = "ButtonGridViewTest"
+               ReferencedContainer = "container:ButtonGridViewTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BF898A719BD963500E00CC3"
                BuildableName = "ButtGridViewTestTests.xctest"
-               BlueprintName = "ButtGridViewTestTests"
-               ReferencedContainer = "container:ButtGridViewTest.xcodeproj">
+               BlueprintName = "ButtonGridViewTestTests"
+               ReferencedContainer = "container:ButtonGridViewTest.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF8988619BD963500E00CC3"
             BuildableName = "ButtGridViewTest.app"
-            BlueprintName = "ButtGridViewTest"
-            ReferencedContainer = "container:ButtGridViewTest.xcodeproj">
+            BlueprintName = "ButtonGridViewTest"
+            ReferencedContainer = "container:ButtonGridViewTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF8988619BD963500E00CC3"
             BuildableName = "ButtGridViewTest.app"
-            BlueprintName = "ButtGridViewTest"
-            ReferencedContainer = "container:ButtGridViewTest.xcodeproj">
+            BlueprintName = "ButtonGridViewTest"
+            ReferencedContainer = "container:ButtonGridViewTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF8988619BD963500E00CC3"
             BuildableName = "ButtGridViewTest.app"
-            BlueprintName = "ButtGridViewTest"
-            ReferencedContainer = "container:ButtGridViewTest.xcodeproj">
+            BlueprintName = "ButtonGridViewTest"
+            ReferencedContainer = "container:ButtonGridViewTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
