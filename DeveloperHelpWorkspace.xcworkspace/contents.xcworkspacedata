@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ButtGridViewTest/ButtGridViewTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LabelWithTapableTextChunksTest/LabelWithTapableTextChunksTest.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ImageCaptureTest/ImageCaptureTest.xcodeproj">
    </FileRef>
 </Workspace>

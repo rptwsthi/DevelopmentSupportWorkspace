@@ -56,4 +56,26 @@
     return nil;
 }
 
+//-(void) UpdateDatabase:(id)_object with:(NSMutableArray *)updatesArray
+//{
+//    
+//    NSManagedObjectContext *threadManagedObjectContext = [self myManagedContext] ;
+//    [[NSNotificationCenter defaultCenter] removeObserver:self name:NSManagedObjectContextObjectsDidChangeNotification object:threadManagedObjectContext] ;
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mergeContextChangesForNotification:) name:NSManagedObjectContextObjectsDidChangeNotification object:threadManagedObjectContext];
+//    
+//    NSManagedObject *object = [threadManagedObjectContext objectWithID:[_object objectID]] ;
+//    if (updatesArray) {
+//        for (NSDictionary *updatedDic in updatesArray) {
+//            [object setValue:[[updatedDic allValues] lastObject] forKey:[[keyValue allKeys] lastObject]];
+//        }
+//        
+//        NSError *error;
+//        bool result = [threadManagedObjectContext save:&error];
+//        if (!result)
+//        {
+//            NSLog(@" error saving context, %@, %@", error, error.userInfo);
+//        }
+//    }
+//}
+
 @end
