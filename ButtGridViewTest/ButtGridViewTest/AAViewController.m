@@ -23,7 +23,7 @@
     
     //add button grid to view
     UIView *buttonView = [self view:CGSizeMake(self.view.frame.size.width - 40.0f, self.view.frame.size.height - 40.0f) withButtons:NUMBER_OF_BUTTON];
-    [buttonView setBackgroundColor:[UIColor redColor]];
+    [buttonView setBackgroundColor:[UIColor lightTextColor]];
     buttonView.center = CGPointMake(CGRectGetMidX(self.view.frame), CGRectGetMidY(self.view.frame));
     [self.view addSubview:buttonView];
 }
