@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BF8988619BD963500E00CC3"
-               BuildableName = "ButtGridViewTest.app"
+               BuildableName = "ButtonGridViewTest.app"
                BlueprintName = "ButtonGridViewTest"
                ReferencedContainer = "container:ButtonGridViewTest.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BF898A719BD963500E00CC3"
-               BuildableName = "ButtGridViewTestTests.xctest"
+               BuildableName = "ButtonGridViewTestTests.xctest"
                BlueprintName = "ButtonGridViewTestTests"
                ReferencedContainer = "container:ButtonGridViewTest.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF8988619BD963500E00CC3"
-            BuildableName = "ButtGridViewTest.app"
+            BuildableName = "ButtonGridViewTest.app"
             BlueprintName = "ButtonGridViewTest"
             ReferencedContainer = "container:ButtonGridViewTest.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF8988619BD963500E00CC3"
-            BuildableName = "ButtGridViewTest.app"
+            BuildableName = "ButtonGridViewTest.app"
             BlueprintName = "ButtonGridViewTest"
             ReferencedContainer = "container:ButtonGridViewTest.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF8988619BD963500E00CC3"
-            BuildableName = "ButtGridViewTest.app"
+            BuildableName = "ButtonGridViewTest.app"
             BlueprintName = "ButtonGridViewTest"
             ReferencedContainer = "container:ButtonGridViewTest.xcodeproj">
          </BuildableReference>

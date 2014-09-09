@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TouchTextLabel.h"
 
-@interface ViewController : UIViewController
+@interface TTViewController : UIViewController<TouchTextLabelDatasource, TouchTextLabelDelegate>
 
 @end

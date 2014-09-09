@@ -7,18 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TextChunk.h"
+#import "TouchText.h"
 
 @class  TouchTextLabel;
 @protocol TouchTextLabelDatasource <NSObject>
 
 @required
 - (NSInteger) numberOfTouchableText;
-- (NSString *) touchTextAtPosition : (NSInteger) position; //start from 1
-- (NSString *) touchTextIdAtPosition : (NSInteger) position; //start from 1
+- (TouchText *) touchText : (NSInteger) position;
 
 @optional
-- (UIColor *) touchTextColorAtPosition : (NSInteger) position; //start from 1
+- (UIColor *) touchTextColorAtPosition : (NSInteger) position;
 
 
 @end
@@ -26,13 +25,17 @@
 @protocol TouchTextLabelDelegate <NSObject>
 
 @optional
-- (void) touchTextLabel : (TouchTextLabel *) touchLabel textTouched : (NSString *) textId;
+- (void) touchTextLabel : (TouchTextLabel *) touchLabel textTouched : (NSString *) text atPosition  : (NSInteger) position;
 
 @end
 
-@interface TouchTextLabel : UILabel
+@interface TouchTextLabel : UILabel<UIWebViewDelegate>
 
-@property (strong, nonatomic) NSArray *textChunkArray;
-@property (strong, nonatomic) id <TouchTextLabelDatasource> datasource;
-@property (strong, nonatomic) id <TouchTextLabelDelegate>   delegate;
+@property (strong, nonatomic) NSString *content;
+@property (strong, nonatomic) id <TouchTextLabelDatasource> ttDatasource;
+@property (strong, nonatomic) id <TouchTextLabelDelegate>   ttDelegate;
+
+- (void) setText : (NSString *) text;
+- (void) setTouchLabelFrame : (CGRect)frame;
+
 @end

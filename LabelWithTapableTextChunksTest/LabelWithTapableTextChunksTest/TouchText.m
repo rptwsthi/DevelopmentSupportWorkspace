@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Neerav. All rights reserved.
 //
 
-#import "TextChunk.h"
+#import "TouchText.h"
 
-@implementation TextChunk
+@implementation TouchText
 
 @end

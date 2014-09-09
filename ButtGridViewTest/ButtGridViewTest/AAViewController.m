@@ -74,4 +74,17 @@
     return CGSizeMake(edgeOfOneButton, edgeOfOneButton);
 }
 
+- (void)someMethodWhereYouSetUpYourObserver
+{
+    // This could be in an init method.
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(myNotificationMethod:) name:UIKeyboardDidShowNotification object:nil];
+    }
+
+    - (void)myNotificationMethod:(NSNotification*)notification
+    {
+        NSDictionary* keyboardInfo = [notification userInfo];
+        NSValue* keyboardFrameBegin = [keyboardInfo valueForKey:UIKeyboardFrameBeginUserInfoKey];
+        CGRect keyboardFrameBeginRect = [keyboardFrameBegin CGRectValue];
+    }
+
 @end
