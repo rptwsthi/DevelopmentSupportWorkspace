@@ -8,3 +8,7 @@ This XCODE workspace contain several small projects explaining some do hows and 
 1. Set Image To Diffrent UIimageView for related buttons:
 
 Description: A simple project demonstrating how to set image on an related imageView to perticular button. This code chunk was actually written to provide support on this SO question: http://stackoverflow.com/questions/25701477/display-photos-in-different-uiimageviews/25702019#25702019
+
+<h1>2. Label With Touchable Text Chunks:<h1>
+
+You can achieve basic functionality of touchable text . As set text and touchable text chunks and then you’ll be able to get touched text chunk with it’s index. Then you can do what ever you wanna do with that link touched.
