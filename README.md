@@ -16,3 +16,7 @@ Description: A simple project demonstrating how to set image on an related image
 <h3>3. Label With Touchable Text Chunks:<h3>
 
 <p>You can achieve basic functionality of touchable text . As set text and touchable text chunks and then you’ll be able to get touched text chunk with it’s index. Then you can do what ever you wanna do with that link touched.</p>
+
+<h3>4. Simple animation logic:<h3>
+
+<p>Simple view animation in randm order inside a container.</p>
