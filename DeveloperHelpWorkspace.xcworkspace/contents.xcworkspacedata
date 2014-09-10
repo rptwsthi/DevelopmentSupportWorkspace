@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ViewAnimationsTest/ViewAnimationsTest.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ButtGridViewTest/ButtonGridViewTest.xcodeproj">
    </FileRef>
    <FileRef

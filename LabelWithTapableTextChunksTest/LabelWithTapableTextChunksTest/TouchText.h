@@ -15,4 +15,6 @@
 @property (assign)            NSInteger touchTextLocation;
 @property (strong, nonatomic) UIColor   *touchTextColor;
 
+- (NSString *) hexValueOfTextColor;
+
 @end

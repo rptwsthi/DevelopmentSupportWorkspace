@@ -25,7 +25,7 @@
 @protocol TouchTextLabelDelegate <NSObject>
 
 @optional
-- (void) touchTextLabel : (TouchTextLabel *) touchLabel textTouched : (NSString *) text atPosition  : (NSInteger) position;
+- (void) touchTextLabel : (TouchTextLabel *) touchLabel touchText : (TouchText *) text atPosition  : (NSInteger) position;
 
 @end
 
@@ -36,6 +36,7 @@
 @property (strong, nonatomic) id <TouchTextLabelDelegate>   ttDelegate;
 
 - (void) setText : (NSString *) text;
+- (void) sizeToFit;
 - (void) setTouchLabelFrame : (CGRect)frame;
 
 @end

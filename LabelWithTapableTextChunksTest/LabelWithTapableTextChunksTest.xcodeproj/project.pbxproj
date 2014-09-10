@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B302F1C19C01F83006E6A5E /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B302F1B19C01F83006E6A5E /* UIColor+HexColors.m */; };
 		8BCDA85F19BDC20600156141 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDA85E19BDC20600156141 /* CustomView.m */; };
 		8BE092CD19BC372700878E89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE092CC19BC372700878E89 /* Foundation.framework */; };
 		8BE092CF19BC372700878E89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE092CE19BC372700878E89 /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B302F1A19C01F83006E6A5E /* UIColor+HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColors.h"; sourceTree = "<group>"; };
+		8B302F1B19C01F83006E6A5E /* UIColor+HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColors.m"; sourceTree = "<group>"; };
 		8BCDA85D19BDC20600156141 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		8BCDA85E19BDC20600156141 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		8BE092C919BC372700878E89 /* LabelWithTapableTextChunksTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabelWithTapableTextChunksTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B302F1619C01ED4006E6A5E /* TouchtextLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8B302F1A19C01F83006E6A5E /* UIColor+HexColors.h */,
+				8B302F1B19C01F83006E6A5E /* UIColor+HexColors.m */,
+				8BE0930419BC56C600878E89 /* TouchText.h */,
+				8BE0930519BC56C600878E89 /* TouchText.m */,
+				8BE0930119BC37A100878E89 /* TouchTextLabel.h */,
+				8BE0930219BC37A100878E89 /* TouchTextLabel.m */,
+			);
+			name = TouchtextLabel;
+			sourceTree = "<group>";
+		};
 		8BE092C019BC372700878E89 = {
 			isa = PBXGroup;
 			children = (
@@ -121,10 +137,7 @@
 		8BE092D219BC372700878E89 /* LabelWithTapableTextChunksTest */ = {
 			isa = PBXGroup;
 			children = (
-				8BE0930419BC56C600878E89 /* TouchText.h */,
-				8BE0930519BC56C600878E89 /* TouchText.m */,
-				8BE0930119BC37A100878E89 /* TouchTextLabel.h */,
-				8BE0930219BC37A100878E89 /* TouchTextLabel.m */,
+				8B302F1619C01ED4006E6A5E /* TouchtextLabel */,
 				8BE092DB19BC372700878E89 /* AppDelegate.h */,
 				8BE092DC19BC372700878E89 /* AppDelegate.m */,
 				8BE092E119BC372700878E89 /* TTViewController.h */,
@@ -268,6 +281,7 @@
 				8BE092E319BC372700878E89 /* TTViewController.m in Sources */,
 				8BE0930619BC56C600878E89 /* TouchText.m in Sources */,
 				8BE092DD19BC372700878E89 /* AppDelegate.m in Sources */,
+				8B302F1C19C01F83006E6A5E /* UIColor+HexColors.m in Sources */,
 				8BE092D919BC372700878E89 /* main.m in Sources */,
 				8BCDA85F19BDC20600156141 /* CustomView.m in Sources */,
 			);

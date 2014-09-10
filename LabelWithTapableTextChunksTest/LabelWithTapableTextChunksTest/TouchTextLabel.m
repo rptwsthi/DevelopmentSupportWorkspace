@@ -40,6 +40,7 @@
 
 - (void) addInternalWebView{
     [self setUserInteractionEnabled:YES];
+    [self setNumberOfLines:0];
     [self.webView setUserInteractionEnabled:YES];
     
     self.webView = [[UIWebView alloc] init];
@@ -47,8 +48,7 @@
     frame.origin = CGPointZero;
     [self.webView setFrame:frame];
     [self.webView setDelegate:self];
-    [self.webView setBackgroundColor:[UIColor redColor]];
-    [self.webView.scrollView setScrollEnabled:YES];
+    [self.webView.scrollView setScrollEnabled:NO];
     [self addSubview:self.webView];
 }
 
@@ -57,19 +57,11 @@
     [self.webView setFrame:frame];
 }
 
-- (void) setText:(NSString *)text{
-    _content = text;
-    _touchTextArray = [self getTextDetailArray];
-    
-    NSString *htmlText = [self createHtml:_content touchTextDetails:_touchTextArray];
-    [self.webView loadHTMLString:htmlText baseURL:nil];
-}
-
 - (NSArray *) getTextDetailArray{
     NSMutableArray *array = [NSMutableArray array];
     
     NSInteger numeberOfTextChunk = [_ttDatasource numberOfTouchableText];
-    for (NSInteger i = 0; i <= numeberOfTextChunk; i++) {
+    for (NSInteger i = 0; i < numeberOfTextChunk; i++) {
         TouchText *textChunk = [_ttDatasource touchText:i];
         [array addObject:textChunk];
     }
@@ -81,9 +73,9 @@
     NSString *htmlText = nil;
     int index = 0;
     for (TouchText * obj in touchTextArray) {
-        NSString *linkText = [NSString stringWithFormat:@"<a href=\"%d\" style=\"color:red\">%@</a>", index, obj.touchText];
+        NSString *linkText = [NSString stringWithFormat:@"<a href=\"%d\" style=\"color:%@\">%@</a>", index, [obj hexValueOfTextColor], obj.touchText];
         textContent = [textContent stringByReplacingOccurrencesOfString:obj.touchText withString:linkText];
-        index++;
+         index++;
     }
     htmlText = [NSString stringWithFormat:@"<html><body>%@</body></html>", textContent];
 
@@ -91,8 +83,31 @@
 }
 
 - (void) callTouchLabelDelegate : (NSInteger) index{
-    TouchText *text = _touchTextArray[index];
-    [_ttDelegate touchTextLabel:self textTouched:text.touchText atPosition:index];
+    [_ttDelegate touchTextLabel:self touchText:_touchTextArray[index] atPosition:index];
+}
+
+#pragma mark - Overriding UI LabeMessage
+- (void) setText:(NSString *)text{
+    _content = text;
+    _touchTextArray = [self getTextDetailArray];
+    
+    NSString *htmlText = [self createHtml:_content touchTextDetails:_touchTextArray];
+    [self.webView loadHTMLString:htmlText baseURL:nil];
+}
+
+- (void) sizeToFit{
+    UILabel *tempLabel = [[UILabel alloc] initWithFrame:self.frame];
+    [tempLabel setNumberOfLines:0];
+    tempLabel.text = _content;
+    [tempLabel sizeToFit];
+    CGRect frame = self.frame;
+    frame.size = tempLabel.frame.size;
+    self.frame = frame;
+    
+    //set frame
+    frame = self.webView.frame;
+    frame.size = self.frame.size;
+    self.webView.frame = frame;
 }
 
 #pragma mark - Webview Delegate
