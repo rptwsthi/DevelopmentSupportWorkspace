@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B2F99211A56F911002D5E04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F99201A56F911002D5E04 /* main.m */; };
+		8B2F99241A56F911002D5E04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F99231A56F911002D5E04 /* AppDelegate.m */; };
+		8B2F99271A56F911002D5E04 /* PasscodeTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F99251A56F911002D5E04 /* PasscodeTest.xcdatamodeld */; };
+		8B2F992A1A56F911002D5E04 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F99291A56F911002D5E04 /* MasterViewController.m */; };
+		8B2F992D1A56F911002D5E04 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F992C1A56F911002D5E04 /* DetailViewController.m */; };
+		8B2F99301A56F911002D5E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2F992E1A56F911002D5E04 /* Main.storyboard */; };
+		8B2F99321A56F911002D5E04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2F99311A56F911002D5E04 /* Images.xcassets */; };
+		8B2F99351A56F911002D5E04 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B2F99331A56F911002D5E04 /* LaunchScreen.xib */; };
+		8B2F99411A56F912002D5E04 /* PasscodeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F99401A56F912002D5E04 /* PasscodeTestTests.m */; };
+		8B2F994C1A56FA61002D5E04 /* PasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F994B1A56FA61002D5E04 /* PasscodeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B2F993B1A56F912002D5E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B2F99131A56F911002D5E04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B2F991A1A56F911002D5E04;
+			remoteInfo = PasscodeTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B2F991B1A56F911002D5E04 /* PasscodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2F991F1A56F911002D5E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2F99201A56F911002D5E04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B2F99221A56F911002D5E04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B2F99231A56F911002D5E04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B2F99261A56F911002D5E04 /* PasscodeTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PasscodeTest.xcdatamodel; sourceTree = "<group>"; };
+		8B2F99281A56F911002D5E04 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		8B2F99291A56F911002D5E04 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		8B2F992B1A56F911002D5E04 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8B2F992C1A56F911002D5E04 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8B2F992F1A56F911002D5E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B2F99311A56F911002D5E04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B2F99341A56F911002D5E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8B2F993A1A56F912002D5E04 /* PasscodeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasscodeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2F993F1A56F912002D5E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2F99401A56F912002D5E04 /* PasscodeTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasscodeTestTests.m; sourceTree = "<group>"; };
+		8B2F994A1A56FA61002D5E04 /* PasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasscodeViewController.h; sourceTree = "<group>"; };
+		8B2F994B1A56FA61002D5E04 /* PasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasscodeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B2F99181A56F911002D5E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2F99371A56F912002D5E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B2F99121A56F911002D5E04 = {
+			isa = PBXGroup;
+			children = (
+				8B2F991D1A56F911002D5E04 /* PasscodeTest */,
+				8B2F993D1A56F912002D5E04 /* PasscodeTestTests */,
+				8B2F991C1A56F911002D5E04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B2F991C1A56F911002D5E04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B2F991B1A56F911002D5E04 /* PasscodeTest.app */,
+				8B2F993A1A56F912002D5E04 /* PasscodeTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B2F991D1A56F911002D5E04 /* PasscodeTest */ = {
+			isa = PBXGroup;
+			children = (
+				8B2F99221A56F911002D5E04 /* AppDelegate.h */,
+				8B2F99231A56F911002D5E04 /* AppDelegate.m */,
+				8B2F99281A56F911002D5E04 /* MasterViewController.h */,
+				8B2F99291A56F911002D5E04 /* MasterViewController.m */,
+				8B2F992B1A56F911002D5E04 /* DetailViewController.h */,
+				8B2F992C1A56F911002D5E04 /* DetailViewController.m */,
+				8B2F992E1A56F911002D5E04 /* Main.storyboard */,
+				8B2F99311A56F911002D5E04 /* Images.xcassets */,
+				8B2F99331A56F911002D5E04 /* LaunchScreen.xib */,
+				8B2F99251A56F911002D5E04 /* PasscodeTest.xcdatamodeld */,
+				8B2F991E1A56F911002D5E04 /* Supporting Files */,
+				8B2F994A1A56FA61002D5E04 /* PasscodeViewController.h */,
+				8B2F994B1A56FA61002D5E04 /* PasscodeViewController.m */,
+			);
+			path = PasscodeTest;
+			sourceTree = "<group>";
+		};
+		8B2F991E1A56F911002D5E04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B2F991F1A56F911002D5E04 /* Info.plist */,
+				8B2F99201A56F911002D5E04 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B2F993D1A56F912002D5E04 /* PasscodeTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B2F99401A56F912002D5E04 /* PasscodeTestTests.m */,
+				8B2F993E1A56F912002D5E04 /* Supporting Files */,
+			);
+			path = PasscodeTestTests;
+			sourceTree = "<group>";
+		};
+		8B2F993E1A56F912002D5E04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B2F993F1A56F912002D5E04 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B2F991A1A56F911002D5E04 /* PasscodeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2F99441A56F912002D5E04 /* Build configuration list for PBXNativeTarget "PasscodeTest" */;
+			buildPhases = (
+				8B2F99171A56F911002D5E04 /* Sources */,
+				8B2F99181A56F911002D5E04 /* Frameworks */,
+				8B2F99191A56F911002D5E04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasscodeTest;
+			productName = PasscodeTest;
+			productReference = 8B2F991B1A56F911002D5E04 /* PasscodeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B2F99391A56F912002D5E04 /* PasscodeTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2F99471A56F912002D5E04 /* Build configuration list for PBXNativeTarget "PasscodeTestTests" */;
+			buildPhases = (
+				8B2F99361A56F912002D5E04 /* Sources */,
+				8B2F99371A56F912002D5E04 /* Frameworks */,
+				8B2F99381A56F912002D5E04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B2F993C1A56F912002D5E04 /* PBXTargetDependency */,
+			);
+			name = PasscodeTestTests;
+			productName = PasscodeTestTests;
+			productReference = 8B2F993A1A56F912002D5E04 /* PasscodeTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B2F99131A56F911002D5E04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = neerav;
+				TargetAttributes = {
+					8B2F991A1A56F911002D5E04 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					8B2F99391A56F912002D5E04 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 8B2F991A1A56F911002D5E04;
+					};
+				};
+			};
+			buildConfigurationList = 8B2F99161A56F911002D5E04 /* Build configuration list for PBXProject "PasscodeTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B2F99121A56F911002D5E04;
+			productRefGroup = 8B2F991C1A56F911002D5E04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B2F991A1A56F911002D5E04 /* PasscodeTest */,
+				8B2F99391A56F912002D5E04 /* PasscodeTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B2F99191A56F911002D5E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2F99301A56F911002D5E04 /* Main.storyboard in Resources */,
+				8B2F99351A56F911002D5E04 /* LaunchScreen.xib in Resources */,
+				8B2F99321A56F911002D5E04 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2F99381A56F912002D5E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B2F99171A56F911002D5E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2F992D1A56F911002D5E04 /* DetailViewController.m in Sources */,
+				8B2F992A1A56F911002D5E04 /* MasterViewController.m in Sources */,
+				8B2F99241A56F911002D5E04 /* AppDelegate.m in Sources */,
+				8B2F99211A56F911002D5E04 /* main.m in Sources */,
+				8B2F994C1A56FA61002D5E04 /* PasscodeViewController.m in Sources */,
+				8B2F99271A56F911002D5E04 /* PasscodeTest.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2F99361A56F912002D5E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2F99411A56F912002D5E04 /* PasscodeTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B2F993C1A56F912002D5E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B2F991A1A56F911002D5E04 /* PasscodeTest */;
+			targetProxy = 8B2F993B1A56F912002D5E04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B2F992E1A56F911002D5E04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B2F992F1A56F911002D5E04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B2F99331A56F911002D5E04 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B2F99341A56F911002D5E04 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B2F99421A56F912002D5E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B2F99431A56F912002D5E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B2F99451A56F912002D5E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PasscodeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8B2F99461A56F912002D5E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PasscodeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8B2F99481A56F912002D5E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PasscodeTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasscodeTest.app/PasscodeTest";
+			};
+			name = Debug;
+		};
+		8B2F99491A56F912002D5E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PasscodeTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasscodeTest.app/PasscodeTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B2F99161A56F911002D5E04 /* Build configuration list for PBXProject "PasscodeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2F99421A56F912002D5E04 /* Debug */,
+				8B2F99431A56F912002D5E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B2F99441A56F912002D5E04 /* Build configuration list for PBXNativeTarget "PasscodeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2F99451A56F912002D5E04 /* Debug */,
+				8B2F99461A56F912002D5E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B2F99471A56F912002D5E04 /* Build configuration list for PBXNativeTarget "PasscodeTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2F99481A56F912002D5E04 /* Debug */,
+				8B2F99491A56F912002D5E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B2F99251A56F911002D5E04 /* PasscodeTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B2F99261A56F911002D5E04 /* PasscodeTest.xcdatamodel */,
+			);
+			currentVersion = 8B2F99261A56F911002D5E04 /* PasscodeTest.xcdatamodel */;
+			path = PasscodeTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8B2F99131A56F911002D5E04 /* Project object */;
+}

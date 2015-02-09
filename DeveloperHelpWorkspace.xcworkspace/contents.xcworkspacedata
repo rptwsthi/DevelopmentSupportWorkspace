@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PasscodeTest/PasscodeTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:iOSToast/iOSToast.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TypeTextCellTest/TypeTextCellTest.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ViewAnimationsTest/ViewAnimationsTest.xcodeproj">
    </FileRef>
    <FileRef

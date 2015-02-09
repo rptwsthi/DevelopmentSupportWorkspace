@@ -10,29 +10,29 @@
 	<string>DeveloperHelpWorkspace</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>23B0B3E9-EA96-4B7C-AFF1-2A6C76416BEF</key>
+		<key>4255B50F8FCBF653BA01393915158B990B8C95FB</key>
 		<string>https://github.com/rptwsthi/DeveloperHelpWorkspace.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DeveloperHelpWorkspace.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>23B0B3E9-EA96-4B7C-AFF1-2A6C76416BEF</key>
+		<key>4255B50F8FCBF653BA01393915158B990B8C95FB</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/rptwsthi/DeveloperHelpWorkspace.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>23B0B3E9-EA96-4B7C-AFF1-2A6C76416BEF</string>
+	<string>4255B50F8FCBF653BA01393915158B990B8C95FB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>23B0B3E9-EA96-4B7C-AFF1-2A6C76416BEF</string>
+			<string>4255B50F8FCBF653BA01393915158B990B8C95FB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DeveloperHelpWorkspace</string>
 		</dict>
