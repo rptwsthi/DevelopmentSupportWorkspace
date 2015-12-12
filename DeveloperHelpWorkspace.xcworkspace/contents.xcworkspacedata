@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CollectionViewTest/CollectionViewTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RptTextView/RptTextView.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PasscodeTest/PasscodeTest.xcodeproj">
    </FileRef>
    <FileRef
