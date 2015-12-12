@@ -31,12 +31,28 @@
 
 @implementation TestMiddleClass
 
-- (id) initWithCoder:(NSCoder *)aDecoder {
+- (id) init {
     if (self = [super init]) {
-        //_testInnerClass = [aDecoder decodeObjectForKey:@"TestInnerClass"];
-        [self loadTestInnerClass];
+        [self initializeInnerClass:nil];
     }
     return self;
+}
+
+- (id) initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super init]) {
+        //[self loadTestInnerClass];
+        [self initializeInnerClass:aDecoder];
+    }
+    return self;
+}
+
+- (void) initializeInnerClass : (NSCoder *) aDecoder{
+    if (aDecoder!=nil)
+        _testInnerClass = [aDecoder decodeObjectForKey:@"TestInnerClass"];
+    
+    if (_testInnerClass == nil) {
+        _testInnerClass = [[TestInnerClass alloc] init];
+    }
 }
 
 - (void) printStuff {
@@ -47,26 +63,7 @@
     [aCoder encodeObject:_testInnerClass forKey:@"TestInnerClass"];
 }
 
-- (void) loadTestInnerClass {
-    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"TestInnerClass"];
-    if (data != nil) {
-        _testInnerClass = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-    }else{
-        _testInnerClass = [[TestInnerClass alloc] init];
-    }
-}
-
-- (void) saveTestInnerClass {
-    NSData *serialized = [NSKeyedArchiver archivedDataWithRootObject:_testInnerClass];
-    [[NSUserDefaults standardUserDefaults] setObject:serialized forKey:@"TestInnerClass"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-- (void) save {
-    [self saveTestInnerClass];
-}
-
-@end
+@end 
 
 @interface TestClass()
 @property (strong, nonatomic) TestMiddleClass *testMiddleClass;
@@ -91,7 +88,7 @@
 }
 
 - (void) saveTestMiddleClass {
-    [_testMiddleClass save];
+    //[_testMiddleClass save];
     NSData *serialized = [NSKeyedArchiver archivedDataWithRootObject:_testMiddleClass];
     [[NSUserDefaults standardUserDefaults] setObject:serialized forKey:@"TestMiddleClass"];
     [[NSUserDefaults standardUserDefaults] synchronize];

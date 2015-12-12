@@ -17,7 +17,6 @@
 @interface TestMiddleClass : NSObject<NSCoding>
 @property (strong) TestInnerClass *testInnerClass;
 - (void) printStuff;
-- (void) save;
 @end
 
 
