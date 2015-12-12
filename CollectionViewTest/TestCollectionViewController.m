@@ -59,8 +59,8 @@ static NSString * const reuseIdentifier = @"Cell";
         UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"smallCell" forIndexPath:indexPath];
         [cell.contentView setBackgroundColor:[UIColor redColor]];
         
-        if (indexPath.row % 4 < 2) {
-            [cell setBackgroundColor:[UIColor greenColor]];
+        if (indexPath.row%4 < 2) {
+            [cell.contentView setBackgroundColor:[UIColor greenColor]];
         }
         return cell;
     }
