@@ -16,6 +16,7 @@
 
 @interface TestMiddleClass : NSObject<NSCoding>
 @property (strong) TestInnerClass *testInnerClass;
+@property (assign) NSInteger anotherInteger;
 - (void) printStuff;
 @end
 

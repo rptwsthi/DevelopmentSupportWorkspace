@@ -30,10 +30,11 @@
 
 - (IBAction)saveButtonTouched:(id)sender {
     TestMiddleClass *testMiddleClass = [_testClass getTestMiddleClass];
+    testMiddleClass.anotherInteger += 2;
     [testMiddleClass printStuff];
     
     TestInnerClass *innerClass = [_testClass getTestInnerClass];
-    innerClass.integer += 10.0f;
+    innerClass.integer += 10;
     innerClass.string = @"10.0f";
     [innerClass printStuff];
     

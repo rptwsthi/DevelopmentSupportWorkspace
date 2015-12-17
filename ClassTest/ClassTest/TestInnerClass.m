@@ -26,6 +26,7 @@
     [aCoder encodeInteger:_integer forKey:@"integer"];
     [aCoder encodeObject:_string forKey:@"string"];
 }
+
 @end
 
 
@@ -42,6 +43,7 @@
     if (self = [super init]) {
         //[self loadTestInnerClass];
         [self initializeInnerClass:aDecoder];
+        _anotherInteger = [aDecoder decodeIntegerForKey:@"integer"];
     }
     return self;
 }
@@ -61,9 +63,18 @@
 
 - (void) encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:_testInnerClass forKey:@"TestInnerClass"];
+    [aCoder encodeInteger:_anotherInteger forKey:@"integer"];
 }
 
-@end 
+- (void) save {
+    //[_testMiddleClass save];
+    NSData *serialized = [NSKeyedArchiver archivedDataWithRootObject:self];
+    [[NSUserDefaults standardUserDefaults] setObject:serialized forKey:@"TestMiddleClass"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
+@end
 
 @interface TestClass()
 @property (strong, nonatomic) TestMiddleClass *testMiddleClass;
@@ -87,15 +98,9 @@
     }
 }
 
-- (void) saveTestMiddleClass {
-    //[_testMiddleClass save];
-    NSData *serialized = [NSKeyedArchiver archivedDataWithRootObject:_testMiddleClass];
-    [[NSUserDefaults standardUserDefaults] setObject:serialized forKey:@"TestMiddleClass"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
 - (void) save {
-    [self saveTestMiddleClass];
+    [_testMiddleClass save];
+    [self printStuff];
 }
 
 //
@@ -116,7 +121,7 @@
 }
 
 - (void) printStuff {
-    NSLog(@"self = %@ _testMiddleClass = %@, testInnerClass = %@, integer = %zd, string = %@", self, self.testMiddleClass, _testMiddleClass.testInnerClass, _testMiddleClass.testInnerClass.integer, _testMiddleClass.testInnerClass.string);
+    NSLog(@"self = %@ _testMiddleClass = %@, testInnerClass = %@, integer = %zd, string = %@, _testMiddleClass.anotherInteger = %zd", self, self.testMiddleClass, _testMiddleClass.testInnerClass, _testMiddleClass.testInnerClass.integer, _testMiddleClass.testInnerClass.string, _testMiddleClass.anotherInteger);
 }
 
 
