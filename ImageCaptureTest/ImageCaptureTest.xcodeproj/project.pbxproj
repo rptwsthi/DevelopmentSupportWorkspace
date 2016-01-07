@@ -456,6 +456,7 @@
 				8BE292E219BB678A007A5125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BE292E319BB678A007A5125 /* Build configuration list for PBXNativeTarget "ImageCaptureTestTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +465,7 @@
 				8BE292E519BB678A007A5125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

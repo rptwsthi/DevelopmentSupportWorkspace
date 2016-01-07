@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UITableViewTest/UITableViewTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenEarSpeechRecognition/OpenEarSpeechRecognition.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/developer/Work_/Work/Neerav/DeveloperHelpWorkspace/iOSTest/iPodTest.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ClassTest/ClassTest.xcodeproj">
    </FileRef>
    <FileRef

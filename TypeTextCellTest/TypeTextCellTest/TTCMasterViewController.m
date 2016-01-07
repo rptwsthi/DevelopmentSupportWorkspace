@@ -42,14 +42,35 @@
     return 1;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    TypeTextTableViewCell *cell = (TypeTextTableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"ttcIdentifier" forIndexPath:indexPath];
-    [cell setDelegate:self];
-    cell.ttcTextView.text = textCellDictionary[indexPath][@"text"];
-    [cell setParentTableView:self.tableView];
-    return cell;
-}
+    - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+    {
+        switch (indexPath.row) {
+            case 0:
+                //image cell
+                break;
+            case 1:
+                //image cell
+                break;
+            case 2:
+                //Video player cell
+                break;
+            case 3:
+                //webview cell
+                break;
+            case 4:
+                //any other cell
+                break;
+
+
+            default:
+                break;
+        }
+        TypeTextTableViewCell *cell = (TypeTextTableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"ttcIdentifier" forIndexPath:indexPath];
+        [cell setDelegate:self];
+        cell.ttcTextView.text = textCellDictionary[indexPath][@"text"];
+        [cell setParentTableView:self.tableView];
+        return cell;
+    }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (textCellDictionary[indexPath] != nil) {
