@@ -16,6 +16,7 @@
 		8BB84EF61C3E811B00941160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB84EF41C3E811B00941160 /* LaunchScreen.storyboard */; };
 		8BB84F011C3E811B00941160 /* UITableViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84F001C3E811B00941160 /* UITableViewTestTests.m */; };
 		8BB84F0C1C3E811B00941160 /* UITableViewTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84F0B1C3E811B00941160 /* UITableViewTestUITests.m */; };
+		8BB84F1B1C3E8B1900941160 /* LaunchScrenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84F1A1C3E8B1900941160 /* LaunchScrenController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		8BB84F071C3E811B00941160 /* UITableViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB84F0B1C3E811B00941160 /* UITableViewTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewTestUITests.m; sourceTree = "<group>"; };
 		8BB84F0D1C3E811B00941160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB84F191C3E8B1900941160 /* LaunchScrenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchScrenController.h; sourceTree = "<group>"; };
+		8BB84F1A1C3E8B1900941160 /* LaunchScrenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchScrenController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				8BB84EF41C3E811B00941160 /* LaunchScreen.storyboard */,
 				8BB84EF71C3E811B00941160 /* Info.plist */,
 				8BB84EE31C3E811B00941160 /* Supporting Files */,
+				8BB84F191C3E8B1900941160 /* LaunchScrenController.h */,
+				8BB84F1A1C3E8B1900941160 /* LaunchScrenController.m */,
 			);
 			path = UITableViewTest;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BB84EE81C3E811B00941160 /* AppDelegate.m in Sources */,
+				8BB84F1B1C3E8B1900941160 /* LaunchScrenController.m in Sources */,
 				8BB84EEB1C3E811B00941160 /* MasterViewController.m in Sources */,
 				8BB84EE51C3E811B00941160 /* main.m in Sources */,
 				8BB84EEE1C3E811B00941160 /* DetailViewController.m in Sources */,
@@ -502,6 +508,7 @@
 				8BB84F121C3E811B00941160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BB84F131C3E811B00941160 /* Build configuration list for PBXNativeTarget "UITableViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				8BB84F151C3E811B00941160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BB84F161C3E811B00941160 /* Build configuration list for PBXNativeTarget "UITableViewTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +526,7 @@
 				8BB84F181C3E811B00941160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
