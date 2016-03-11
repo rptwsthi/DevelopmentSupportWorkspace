@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B67B96A1C92A71E00788893 /* ImageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B67B9691C92A71E00788893 /* ImageList.plist */; };
+		8B67B96C1C92A93100788893 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B67B96B1C92A93100788893 /* image.png */; };
 		8BB84EE51C3E811B00941160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84EE41C3E811B00941160 /* main.m */; };
 		8BB84EE81C3E811B00941160 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84EE71C3E811B00941160 /* AppDelegate.m */; };
 		8BB84EEB1C3E811B00941160 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84EEA1C3E811B00941160 /* MasterViewController.m */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B67B9691C92A71E00788893 /* ImageList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageList.plist; sourceTree = "<group>"; };
+		8B67B96B1C92A93100788893 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		8BB84EE01C3E811B00941160 /* UITableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB84EE41C3E811B00941160 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BB84EE61C3E811B00941160 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				8BB84EE31C3E811B00941160 /* Supporting Files */,
 				8BB84F191C3E8B1900941160 /* LaunchScrenController.h */,
 				8BB84F1A1C3E8B1900941160 /* LaunchScrenController.m */,
+				8B67B96B1C92A93100788893 /* image.png */,
+				8B67B9691C92A71E00788893 /* ImageList.plist */,
 			);
 			path = UITableViewTest;
 			sourceTree = "<group>";
@@ -253,9 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B67B96A1C92A71E00788893 /* ImageList.plist in Resources */,
 				8BB84EF61C3E811B00941160 /* LaunchScreen.storyboard in Resources */,
 				8BB84EF31C3E811B00941160 /* Assets.xcassets in Resources */,
 				8BB84EF11C3E811B00941160 /* Main.storyboard in Resources */,
+				8B67B96C1C92A93100788893 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

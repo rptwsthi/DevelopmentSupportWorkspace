@@ -36,8 +36,8 @@
 }
 
 - (void) initilizePubNub {
-    PNConfiguration *configuration = [PNConfiguration configurationWithPublishKey:@"YOUR PUB KEY"
-                                                                     subscribeKey:@"YOUR SUB KEY"];
+    PNConfiguration *configuration = [PNConfiguration configurationWithPublishKey:@"pub-c-7ca711cd-b725-467d-8144-345d6cae1618"
+                                                                     subscribeKey:@"sub-c-2a59c5c6-ae50-11e5-8d24-0619f8945a4f"];
     self.client = [PubNub clientWithConfiguration:configuration];
     [self.client addListener:self];
 }

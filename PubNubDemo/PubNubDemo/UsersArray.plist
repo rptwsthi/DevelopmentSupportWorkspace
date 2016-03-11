@@ -12,13 +12,13 @@
 		<key>userName</key>
 		<string>user102</string>
 		<key>myChannel</key>
-		<string>pnd_channel_user101</string>
+		<string>pnd_channel_user102</string>
 	</dict>
 	<dict>
 		<key>userName</key>
 		<string>user103</string>
 		<key>myChannel</key>
-		<string>pnd_channel_user101</string>
+		<string>pnd_channel_user103</string>
 	</dict>
 </array>
 </plist>
