@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B52C7111CB39F0C0075B9F6 /* CheckBoxTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52C7101CB39F0C0075B9F6 /* CheckBoxTestTableViewController.m */; };
 		8B67B96A1C92A71E00788893 /* ImageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B67B9691C92A71E00788893 /* ImageList.plist */; };
 		8B67B96C1C92A93100788893 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B67B96B1C92A93100788893 /* image.png */; };
+		8B763F9E1C9F0D43002B482F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B763F9D1C9F0D43002B482F /* Main.storyboard */; };
 		8BB84EE51C3E811B00941160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84EE41C3E811B00941160 /* main.m */; };
 		8BB84EE81C3E811B00941160 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84EE71C3E811B00941160 /* AppDelegate.m */; };
 		8BB84EEB1C3E811B00941160 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84EEA1C3E811B00941160 /* MasterViewController.m */; };
 		8BB84EEE1C3E811B00941160 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84EED1C3E811B00941160 /* DetailViewController.m */; };
-		8BB84EF11C3E811B00941160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB84EEF1C3E811B00941160 /* Main.storyboard */; };
 		8BB84EF31C3E811B00941160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB84EF21C3E811B00941160 /* Assets.xcassets */; };
 		8BB84EF61C3E811B00941160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB84EF41C3E811B00941160 /* LaunchScreen.storyboard */; };
 		8BB84F011C3E811B00941160 /* UITableViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB84F001C3E811B00941160 /* UITableViewTestTests.m */; };
@@ -39,8 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B52C70F1CB39F0C0075B9F6 /* CheckBoxTestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBoxTestTableViewController.h; sourceTree = "<group>"; };
+		8B52C7101CB39F0C0075B9F6 /* CheckBoxTestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBoxTestTableViewController.m; sourceTree = "<group>"; };
 		8B67B9691C92A71E00788893 /* ImageList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageList.plist; sourceTree = "<group>"; };
 		8B67B96B1C92A93100788893 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		8B763F9D1C9F0D43002B482F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8BB84EE01C3E811B00941160 /* UITableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB84EE41C3E811B00941160 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BB84EE61C3E811B00941160 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,7 +53,6 @@
 		8BB84EEA1C3E811B00941160 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		8BB84EEC1C3E811B00941160 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		8BB84EED1C3E811B00941160 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		8BB84EF01C3E811B00941160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BB84EF21C3E811B00941160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BB84EF51C3E811B00941160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BB84EF71C3E811B00941160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,9 +120,11 @@
 				8BB84EEA1C3E811B00941160 /* MasterViewController.m */,
 				8BB84EEC1C3E811B00941160 /* DetailViewController.h */,
 				8BB84EED1C3E811B00941160 /* DetailViewController.m */,
-				8BB84EEF1C3E811B00941160 /* Main.storyboard */,
+				8B52C70F1CB39F0C0075B9F6 /* CheckBoxTestTableViewController.h */,
+				8B52C7101CB39F0C0075B9F6 /* CheckBoxTestTableViewController.m */,
 				8BB84EF21C3E811B00941160 /* Assets.xcassets */,
 				8BB84EF41C3E811B00941160 /* LaunchScreen.storyboard */,
+				8B763F9D1C9F0D43002B482F /* Main.storyboard */,
 				8BB84EF71C3E811B00941160 /* Info.plist */,
 				8BB84EE31C3E811B00941160 /* Supporting Files */,
 				8BB84F191C3E8B1900941160 /* LaunchScrenController.h */,
@@ -260,9 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B67B96A1C92A71E00788893 /* ImageList.plist in Resources */,
+				8B763F9E1C9F0D43002B482F /* Main.storyboard in Resources */,
 				8BB84EF61C3E811B00941160 /* LaunchScreen.storyboard in Resources */,
 				8BB84EF31C3E811B00941160 /* Assets.xcassets in Resources */,
-				8BB84EF11C3E811B00941160 /* Main.storyboard in Resources */,
 				8B67B96C1C92A93100788893 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B52C7111CB39F0C0075B9F6 /* CheckBoxTestTableViewController.m in Sources */,
 				8BB84EE81C3E811B00941160 /* AppDelegate.m in Sources */,
 				8BB84F1B1C3E8B1900941160 /* LaunchScrenController.m in Sources */,
 				8BB84EEB1C3E811B00941160 /* MasterViewController.m in Sources */,
@@ -328,14 +334,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8BB84EEF1C3E811B00941160 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BB84EF01C3E811B00941160 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8BB84EF41C3E811B00941160 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

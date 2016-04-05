@@ -45,36 +45,36 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark <UICollectionViewDataSource>
 
-    - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-        return 1;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+
+    return 7;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"smallCell" forIndexPath:indexPath];
+    [cell.contentView setBackgroundColor:[UIColor redColor]];
+    
+    if (indexPath.row%4 < 2) {
+        [cell.contentView setBackgroundColor:[UIColor greenColor]];
     }
+    return cell;
+}
 
-
-    - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-
-        return 7;
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row % 4 < 2) {
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width / 2 - 15.0f, 80.0f);
     }
+    return CGSizeMake([UIScreen mainScreen].bounds.size.width / 2 - 15.0f, 200.0f);
+}
 
-    - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-        UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"smallCell" forIndexPath:indexPath];
-        [cell.contentView setBackgroundColor:[UIColor redColor]];
-        
-        if (indexPath.row%4 < 2) {
-            [cell.contentView setBackgroundColor:[UIColor greenColor]];
-        }
-        return cell;
-    }
-
-    -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-        if (indexPath.row % 4 < 2) {
-            return CGSizeMake([UIScreen mainScreen].bounds.size.width / 2 - 15.0f, 80.0f);
-        }
-        return CGSizeMake([UIScreen mainScreen].bounds.size.width / 2 - 15.0f, 200.0f);
-    }
-
-    - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-        return 5.0;
-    }
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    return 5.0;
+}
 
 
 #pragma mark <UICollectionViewDelegate>
