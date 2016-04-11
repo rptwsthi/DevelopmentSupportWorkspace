@@ -8,66 +8,66 @@
 
 #import "CheckBoxTestTableViewController.h"
 
-@interface CheckBoxTestTableViewController ()
+    @interface CheckBoxTestTableViewController ()
 
-@property (nonatomic, strong) NSArray *dataArray;
-@property (nonatomic, strong) NSMutableDictionary *selectedIndexDictionary;
+    @property (nonatomic, strong) NSArray *dataArray;
+    @property (nonatomic, strong) NSMutableDictionary *selectedIndexDictionary;
 
-@end
+    @end
 
-@implementation CheckBoxTestTableViewController
+    @implementation CheckBoxTestTableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    //
-    _dataArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ImageList" ofType:@"plist"]];
-    _selectedIndexDictionary = [NSMutableDictionary dictionary];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _dataArray.count;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"checkMarkCell" forIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryNone;
-    
-    // Configure the cell...
-    cell.textLabel.text = _dataArray[indexPath.row][@"text"];
-    if (_selectedIndexDictionary[indexPath] != nil) cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    
-    return cell;
-}
-
-- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    if (_selectedIndexDictionary[indexPath] == nil) {
-        [_selectedIndexDictionary setObject:_dataArray[indexPath.row] forKey:indexPath];
-        [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark];
-    }else{
-        [_selectedIndexDictionary removeObjectForKey:indexPath];
-        [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryNone];
+    - (void)viewDidLoad {
+        [super viewDidLoad];
+        
+        // Uncomment the following line to preserve selection between presentations.
+        // self.clearsSelectionOnViewWillAppear = NO;
+        
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+        
+        //
+        _dataArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ImageList" ofType:@"plist"]];
+        _selectedIndexDictionary = [NSMutableDictionary dictionary];
     }
-//    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-}
+
+    - (void)didReceiveMemoryWarning {
+        [super didReceiveMemoryWarning];
+        // Dispose of any resources that can be recreated.
+    }
+
+    #pragma mark - Table view data source
+
+    - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+        return 1;
+    }
+
+    - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+        return _dataArray.count;
+    }
+
+
+    - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"checkMarkCell" forIndexPath:indexPath];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        
+        // Configure the cell...
+        cell.textLabel.text = _dataArray[indexPath.row][@"text"];
+        if (_selectedIndexDictionary[indexPath] != nil) cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        
+        return cell;
+    }
+
+    - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+        if (_selectedIndexDictionary[indexPath] == nil) {
+            [_selectedIndexDictionary setObject:_dataArray[indexPath.row] forKey:indexPath];
+            [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark];
+        }else{
+            [_selectedIndexDictionary removeObjectForKey:indexPath];
+            [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryNone];
+        }
+    //    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 
 
 /*
