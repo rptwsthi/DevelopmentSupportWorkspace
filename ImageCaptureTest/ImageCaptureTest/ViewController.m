@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EmptyViewController.h"
 
 @interface ViewController ()
 - (IBAction)takePhoto:(id)sender;
@@ -23,16 +24,27 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
-- (IBAction)resign:(id)sender {
+
+- (void) viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+
+	[self performSelector:@selector(showDetail) withObject:nil afterDelay:2.0];
 }
-- (IBAction)resignTextViewzPlease:(id)sender {
+
+- (void) showDetail {
+	EmptyViewController *vc = [[EmptyViewController alloc] initWithNibName:@"Empty" bundle:[NSBundle mainBundle]];
+	[self presentViewController:vc animated:true completion:nil];
 }
-- (IBAction)resign:(id)sender {
+
+- (void) pushDetail {
+	EmptyViewController *vc = [[EmptyViewController alloc] initWithNibName:@"Empty" bundle:[NSBundle mainBundle]];
+	[self.navigationController pushViewController:vc animated:true];
 }
-- (IBAction)saveButtonTouched:(id)sender {
-}
-- (IBAction)saveButtonTouched:(id)sender {
-}
+
+
+- (IBAction)resign:(id)sender {}
+- (IBAction)resignTextViewzPlease:(id)sender {}
+- (IBAction)saveButtonTouched:(id)sender {}
 
 - (void)didReceiveMemoryWarning
 {

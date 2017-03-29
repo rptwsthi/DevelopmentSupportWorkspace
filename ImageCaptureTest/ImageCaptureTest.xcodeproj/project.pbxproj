@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B680BA71E8BE98100D427C0 /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B680BA61E8BE98100D427C0 /* Empty.xib */; };
+		8B680BAA1E8BE9B000D427C0 /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B680BA91E8BE9B000D427C0 /* EmptyViewController.m */; };
 		8BE292B219BB6789007A5125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE292B119BB6789007A5125 /* Foundation.framework */; };
 		8BE292B419BB6789007A5125 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE292B319BB6789007A5125 /* CoreGraphics.framework */; };
 		8BE292B619BB678A007A5125 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE292B519BB678A007A5125 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B680BA61E8BE98100D427C0 /* Empty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
+		8B680BA81E8BE9B000D427C0 /* EmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewController.h; sourceTree = "<group>"; };
+		8B680BA91E8BE9B000D427C0 /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
 		8BE292AE19BB6789007A5125 /* ImageCaptureTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCaptureTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE292B119BB6789007A5125 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BE292B319BB6789007A5125 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +124,9 @@
 				8BE292C719BB678A007A5125 /* ViewController.m */,
 				8BE292C919BB678A007A5125 /* Images.xcassets */,
 				8BE292B819BB678A007A5125 /* Supporting Files */,
+				8B680BA61E8BE98100D427C0 /* Empty.xib */,
+				8B680BA81E8BE9B000D427C0 /* EmptyViewController.h */,
+				8B680BA91E8BE9B000D427C0 /* EmptyViewController.m */,
 			);
 			path = ImageCaptureTest;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BE292CA19BB678A007A5125 /* Images.xcassets in Resources */,
+				8B680BA71E8BE98100D427C0 /* Empty.xib in Resources */,
 				8BE292BC19BB678A007A5125 /* InfoPlist.strings in Resources */,
 				8BE292C519BB678A007A5125 /* Main.storyboard in Resources */,
 			);
@@ -251,6 +260,7 @@
 			files = (
 				8BE292C819BB678A007A5125 /* ViewController.m in Sources */,
 				8BE292C219BB678A007A5125 /* AppDelegate.m in Sources */,
+				8B680BAA1E8BE9B000D427C0 /* EmptyViewController.m in Sources */,
 				8BE292BE19BB678A007A5125 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
