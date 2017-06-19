@@ -40,4 +40,7 @@
    <FileRef
       location = "group:ImageCaptureTest/ImageCaptureTest.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:AutolayoutTest/AutolayoutTest.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -4,20 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TypeTextCellTest.xcscheme</key>
+		<key>AutolayoutTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>12</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8BA0E36F19CB742C004F725C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8BA0E39819CB742D004F725C</key>
+		<key>8B2002F11EDD9CE00085DE01</key>
 		<dict>
 			<key>primary</key>
 			<true/>

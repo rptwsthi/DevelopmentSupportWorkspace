@@ -4,20 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TypeTextCellTest.xcscheme</key>
+		<key>NameTagInputView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8BA0E36F19CB742C004F725C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8BA0E39819CB742D004F725C</key>
+		<key>8B9069771EF3F2EF00AF3CA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

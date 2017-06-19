@@ -14,7 +14,7 @@
 		8B0C81CD1C1C89F4003D06EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0C81CB1C1C89F4003D06EA /* LaunchScreen.storyboard */; };
 		8B0C81D81C1C89F4003D06EA /* CollectionViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C81D71C1C89F4003D06EA /* CollectionViewTestTests.m */; };
 		8B0C81E31C1C89F4003D06EA /* CollectionViewTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C81E21C1C89F4003D06EA /* CollectionViewTestUITests.m */; };
-		8B0C81F21C1C8A52003D06EA /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C81F11C1C8A52003D06EA /* TestCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8B0C81F21C1C8A52003D06EA /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C81F11C1C8A52003D06EA /* TestCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

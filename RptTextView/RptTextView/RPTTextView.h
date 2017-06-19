@@ -11,6 +11,7 @@
 @class RPTTextView;
 
 @protocol RPTTextViewDelegate <NSObject>
+@optional
 - (BOOL)textViewShouldBeginEditing:(RPTTextView *)textView;
 - (BOOL)textViewShouldEndEditing:(RPTTextView *)textView;
 
@@ -31,7 +32,9 @@
 @property (nonatomic, strong) NSString *placeHolder;
 @property (nonatomic, strong) UIColor *placeHolderColor;
 @property (nonatomic, strong) UIColor *cusomTextColor;
-
+@property (nonatomic, strong) NSString *text_;
 @property (nonatomic, assign) id <RPTTextViewDelegate> delegate_;
 @property (nonatomic, assign) NSInteger charectorLimit;
+
+- (NSString *) editedText;
 @end

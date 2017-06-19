@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B20030F1EDDAAB50085DE01 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B20030E1EDDAAB50085DE01 /* NewViewController.m */; };
 		8B52C7111CB39F0C0075B9F6 /* CheckBoxTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52C7101CB39F0C0075B9F6 /* CheckBoxTestTableViewController.m */; };
 		8B67B96A1C92A71E00788893 /* ImageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B67B9691C92A71E00788893 /* ImageList.plist */; };
 		8B67B96C1C92A93100788893 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B67B96B1C92A93100788893 /* image.png */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B20030D1EDDAAB50085DE01 /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		8B20030E1EDDAAB50085DE01 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 		8B52C70F1CB39F0C0075B9F6 /* CheckBoxTestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBoxTestTableViewController.h; sourceTree = "<group>"; };
 		8B52C7101CB39F0C0075B9F6 /* CheckBoxTestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBoxTestTableViewController.m; sourceTree = "<group>"; };
 		8B67B9691C92A71E00788893 /* ImageList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageList.plist; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				8BB84EED1C3E811B00941160 /* DetailViewController.m */,
 				8B52C70F1CB39F0C0075B9F6 /* CheckBoxTestTableViewController.h */,
 				8B52C7101CB39F0C0075B9F6 /* CheckBoxTestTableViewController.m */,
+				8B20030D1EDDAAB50085DE01 /* NewViewController.h */,
+				8B20030E1EDDAAB50085DE01 /* NewViewController.m */,
 				8BB84EF21C3E811B00941160 /* Assets.xcassets */,
 				8BB84EF41C3E811B00941160 /* LaunchScreen.storyboard */,
 				8B763F9D1C9F0D43002B482F /* Main.storyboard */,
@@ -293,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B20030F1EDDAAB50085DE01 /* NewViewController.m in Sources */,
 				8B52C7111CB39F0C0075B9F6 /* CheckBoxTestTableViewController.m in Sources */,
 				8BB84EE81C3E811B00941160 /* AppDelegate.m in Sources */,
 				8BB84F1B1C3E8B1900941160 /* LaunchScrenController.m in Sources */,
